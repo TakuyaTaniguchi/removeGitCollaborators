@@ -2,12 +2,14 @@
     /**
      * GLOBAL
      * gitアカウントのメールアドレス
-     * ログインパスワー
+     * ログインパスワード
+     * githubのアカウント名
      * 削除したいユーザー
      * を入力してください。
      */
     $Email = '';
     $PASS = '';
+    $USER = '';
     $DELTE_USER = '';
 
 
@@ -26,7 +28,7 @@
     for ($i = 0; $i < $count; ++$i) {
         $repoName = $arr[$i]['name'];
 
-        $cmd = "curl -X DELETE -u $Email:$PASS 'https://api.github.com/repos/oikaze-inc/$repoName/collaborators/$DELTE_USER'";
+        $cmd = "curl -X DELETE -u $Email:$PASS 'https://api.github.com/repos/$USER/$repoName/collaborators/$DELTE_USER'";
         echo $repoName;
         echo exec($cmd);
     }

@@ -2,7 +2,7 @@
 
 ## Description
 
-対象のGituhubアカウントの全てのリポジトリから指定したユーザを削除します。  
+対象のGituhubアカウントの全てのリポジトリから指定したCollaboratorsを削除します。  
 
 ## Usage
 
@@ -19,6 +19,7 @@ remove.phpの変数を指定します。
 ```
 $Email = 'hoge@gmail.com';
 $PASS = 'password';
+$USER = 'MYACCOUNT';
 $DELTE_USER = 'user_id';
 ```
 
