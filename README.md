@@ -2,7 +2,7 @@
 
 ## Description
 
-対象のGituhubアカウントの全てのリポジトリから指定したユーザを削除します。  
+対象のGituhubアカウントの全てのリポジトリから指定したCollaboratorsを削除します。  
 
 ## Usage
 
