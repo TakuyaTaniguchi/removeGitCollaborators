@@ -19,6 +19,7 @@ remove.phpの変数を指定します。
 ```
 $Email = 'hoge@gmail.com';
 $PASS = 'password';
+$USER = 'MyName'
 $DELTE_USER = 'user_id';
 ```
 
